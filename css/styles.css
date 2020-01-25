@@ -67,6 +67,7 @@ body{
   background-color: #f8ebe9;
 }
 .section{
+  display: flex;
   max-width: 1000px;
   margin: 100px auto;
 }
@@ -77,6 +78,37 @@ body{
   padding-right: 30px;
   padding-left: 100px;
   padding-bottom: 110px;
+}
+.picture-site{
+  width: 360px;
+  padding-top: 35px;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.picture-site-button{
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  color: #444
+}
+.picture-site-button::before{
+  position: absolute;
+  top: 0px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/arrow-back.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  content: "";
 }
 .site-nav{
   display: flex;
@@ -102,10 +134,21 @@ body{
   color: #000;
 }
 .site-title h2{
+  position: relative;
   font-family: "Playfair Display";
   font-weight: 500;
   font-size: 60px;
   margin: 0;
+}
+.site-heading::after{
+position: absolute;
+top: 110px;
+right: 60px;
+display: block;
+width: 100px;
+height: 4px;
+background-color: #000;
+content: "";
 }
 .site-title p{
   font-family: "Playfair Display";
